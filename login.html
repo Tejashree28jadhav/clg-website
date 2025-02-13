@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Login</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+    .container {
+      width: 400px; /* Increased width */
+     
+      margin: 0 auto;
+      padding: 50px; /* Increased padding */
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 15px; /* Increased padding */
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 30px; /* Increased font size */
+    }
+    button {
+      width: 100%;
+      padding: 15px; /* Increased padding */
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      font-size: 30px; /* Increased font size */
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .link {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+  </style>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<title>SBGI Miraj</title>
+
+</head>
+<body>
+  <form id="form1" runat="server">
+    <div class="jumbtron text-center alert alert-primary" style="margin-bottom: 0">
+<h5>Shree Ambabai Talim Sanstha's</h5>
+<h1>Sanjay Bhokare Group of Institutes Polytechnic, Miraj</h1>
+<p>Approved by Goverment of Maharashtra And DTE. </p>
+</div>
+   <div>
+       <nav class="navbar navbar-expand-sm navbar-dark bg-info" style="height:2.5cm;background-color:darkcyan;">
+           <a class="navbar-brand" href="default.aspx"style="font-size:x-large">
+               <img src="logo/sbgi.png" alt="logo" width="65" height="65" />SBGI,Miraj</a>
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="collapsibleNavbar" style="font-size:larger">
+               <ul class="navbar-nav" >
+                   <li class="nav-item">
+                       <a class="nav-link" href="home.html"><b>Home</b></a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="about.html"><b>About</b></a>
+                   </li>
+                    
+                  <li class="nav-item">
+                   <a class="nav-link" href="a.aspx"><b>Placement Services</b>
+                      
+                   </a>
+                  </li>
+                   <li class="nav-item">
+                       <a class="nav-link"href="contact.html" ><b>Contact</b></a>
+                           </li>
+                   <li class="nav-item dropdown">
+                       <a class="nav-link dropdown-toggle" herf="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           <b>Department</b>
+                       </a>
+                   </li>
+                    
+     </ul>
+  
+         
+           </div>
+           
+          
+           <!--Navbar right icon-->
+            <div class="pmd-navbar-right-icon ml-auto" >
+ <a id="login" class="btn btn-sm btm-primary" href="login.html"style="font-size:larger">Login</a>
+                </div>
+           </nav>
+       <br />
+
+
+
+
+  <div class="container" style="width: 500px;height: 600px;">
+    <h2>Admin login</h2>
+    <img src="sbgi.png" alt="Logo" style="display: block; margin: 0 auto; width: 100px;"> 
+    <form action="login.php" method="POST" name="f">
+      <input type="text" name="username" id="s" placeholder="Username" required>
+      <input type="password" name="password" id="v" placeholder="Password" required>
+     
+    </form>
+    <a href="admin_dashboard.html "> <button type="submit" id="b" onclick="call()">Login</button></a>
+    <div class="link">
+      <a href="#">Forgot Password?</a>
+    </div>
+  </div>
+  <!---  <script>
+    function call()
+    {
+      if(f.s=="sbgi"&&f.v=="sbgi123"){
+        document.open("admin_dashboard.html")
+      }
+    }
+  </script>
+  -->
+
+            <!--Footer-->
+
+            <br /> 
+            <div class="jumbtron text-center alert alert-primary" style="margin-bottom: 0">
+                <h4>Quick Links</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                        <div class="footer-pad">
+                            <h4>Address</h4>
+                           <h5>Tilknagar, Miraj-Sangli Road, Wanleswadi,Miraj-416410</h5>
+                            <h6>Dist. Sangli (MS) Phone (0233)221289,2212990</h6>
+                        </div>
+                            </div>
+ 
+                    <div class="col-md-4">
+                        <div class="footer-pad">
+                            <h4>Join Us</h4>
+                           <a href="(0233)221289" style="text-align: center;">
+                              <img src="logo/call.jpg" class="rounded-circle" alt="Cinque Terre" width="42px" height="40"></a>
+                              <a href="https://www.instagram.com/sbgimiraj/" style="text-align: center;">
+                             <img src="logo/insta.jpg"class="rounded-circle" alt="Cinque Terre" width="45px" ></a>
+ 
+ 
+                        <a href="https://www.youtube.com/@sbgimiraj" style="text-align: center;">
+                     <img src="logo/yt.png" class="rounded-circle" alt="Cinque Terre" width="45px" ></a>
+                              <a href="https://whatsapp.com/channel/0029VaGv5GiEVccMuM9rH12c" style="text-align: center;">
+                             <img src="logo/what.jpg"class="rounded-circle" alt="Cinque Terre" width="45px" ></a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h4>Visit Us</h4>
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.8328796070123!2d74.62222532515247!3d16.834644833961345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc1225b1a3af84b%3A0xe66bb8abd7ff422e!2sATS%20Sanjay%20Bhokare%20Group%20of%20Institutes%2C%20Miraj!5e0!3m2!1sen!2sin!4v1732681931056!5m2!1sen!2sin" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 fa-copyright border-dark">
+                        <p class="text-center">
+                            &copy; Sanjay Bhokare Group of Institute, Miraj
+                        </p>
+                    </div>
+                </div>
+ </div> 
+ </div>
+ </div>
+ </form>
+ </body>
+ </html>
